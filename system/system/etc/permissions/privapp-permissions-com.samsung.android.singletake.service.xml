@@ -1,0 +1,8 @@
+<permissions>
+	<privapp-permissions package="com.samsung.android.singletake.service">
+		<permission name="com.sec.face.provider.FaceProvider.data.READ" />
+		<permission name="com.sec.face.provider.FaceProvider.data.WRITE" />
+		<permission name="android.permission.FOREGROUND_SERVICE" />
+		<permission name="android.permission.WRITE_MEDIA_STORAGE" />
+	</privapp-permissions>
+</permissions>

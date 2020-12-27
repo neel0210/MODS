@@ -1,0 +1,21 @@
+<?xml version= "1.0" encoding= "UTF-8"?>
+<resources>
+    <!-- Shootingmode -->
+    <local name="SHOOTING_MODE_SINGLE_TAKE_PHOTO" back="SINGLE_TAKE_PHOTO" front="SINGLE_TAKE_PHOTO" enable="true" more="false" order="1" preview-size="1440x1080" capture-size="2576x1932" front-capture-size="1440x1080" info="1"/>
+    
+    <!-- Single take features -->
+    <local name="SINGLE_TAKE_USING_SINGLE_LENS_ONLY" value="true" />
+    <local name="SINGLE_TAKE_CAPTURE_INTERVAL" value="1000"/>
+    <local name="SINGLE_TAKE_USING_CONTINUOUS_AF" value="true"/>
+    <local name="SINGLE_TAKE_USING_SCENE_OPTIMIZER" value="false"/>
+    <local name="FRONT_SINGLE_TAKE_PHOTO_PREVIEW_FPS_MIN" value="8" />
+    <local name="REAR_SINGLE_TAKE_PHOTO_PREVIEW_FPS_MIN" value="15" />
+    <local name="FRONT_SINGLE_TAKE_PHOTO_PREVIEW_FPS_MAX" value="24" />
+    <local name="REAR_SINGLE_TAKE_PHOTO_PREVIEW_FPS_MAX" value="24" />
+    <local name="SINGLE_TAKE_USING_BEAUTY" value="false" />
+    <local name="SUPPORT_PALM_DETECTION_LITE" value="false" />
+    <local name="SINGLE_TAKE_FRONT_CAMERA_DYNAMIC_FOV" value="false" />
+    <local name="SINGLE_TAKE_USING_SINGLE_LENS_ONLY" value="true" />
+
+# here you need to add your capture size in Preview-size"", capture-size and front-capture-size=""
+</resources>

@@ -13,7 +13,7 @@ Its basically automated debloater script for android to debloat your device and 
 
 
 ## 2. single take
-To download it do   ```git clone https://github.com/neel021000/MODS.git -b singletake``` and push files as given and make change
+To download it do   ```git clone https://github.com/neel021000/MODS.git -b singletake``` or you can select singletake branch and download zip and then push files as given and make change
 in ```system_root/system/cameradata/camerafeatures.xml```
 
 ```

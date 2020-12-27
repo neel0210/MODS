@@ -17,5 +17,5 @@
     <local name="SINGLE_TAKE_FRONT_CAMERA_DYNAMIC_FOV" value="false" />
     <local name="SINGLE_TAKE_USING_SINGLE_LENS_ONLY" value="true" />
 
-# here you need to add your capture size in Preview-size"", capture-size and front-capture-size=""
+# copy this values and add it in your camerafeatures.xml and add your capture size in Preview-size"", capture-size and front-capture-size=""
 </resources>

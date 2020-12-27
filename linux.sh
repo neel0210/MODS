@@ -36,5 +36,13 @@ sudo apt install sublime-text
 sudo apt update
 sudo apt upgrade
 echo "******************************************************************************* "
+echo installing Meld
+echo "******************************************************************************* "
+sudo apt-get install meld
+sudo apt-get install intltool itstool gir1.2-gtksource-3.0 libxml2-utils
+git clone https://git.gnome.org/browse/meld
+cd meld
+sudo python setup.py install
+echo "******************************************************************************* "
 echo LMao thats it for now, kthnx bye
 echo "******************************************************************************* "

@@ -34,7 +34,7 @@ its basically automatic script for linux worms who trying varies of distros cz e
 ## 4. My Filters ( Camera mode )
 To download it do   ```git clone https://github.com/neel021000/MODS.git -b myfilters myfilters``` and push files as given
 ```
-its basically camera filters ported from Galaxy M31 Just make sure to add lines from camerafeature.xml
+its basically camera filters ported from Galaxy M31 Just make sure to add lines from camerafeature.xml & Floating feature
 ```
 
 ### Thats it for now Kthnxbye!

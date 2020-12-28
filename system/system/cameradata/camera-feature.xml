@@ -1,0 +1,18 @@
+<?xml version= "1.0" encoding= "UTF-8"?>
+<resources>
+
+    <!-- Shootingmode -->
+    <local name="SHOOTING_MODE_SINGLE_TAKE_PHOTO" back="SINGLE_TAKE_PHOTO" front="SINGLE_TAKE_PHOTO" enable="true" more="false" order="1" preview-size="1440x1080" capture-size="3264x2448" front-capture-size="2944x2208" info="1" big-info="true"/>
+   
+    <!-- Single take lite features-->
+    <local name="SINGLE_TAKE_USING_CONTINUOUS_AF" value="true"/>
+    <local name="SINGLE_TAKE_USING_SCENE_OPTIMIZER" value="false"/>
+    <local name="SINGLE_TAKE_USING_BEAUTY" value="false" />
+    <local name="SINGLE_TAKE_USING_SINGLE_LENS_ONLY" value="true" />
+    <local name="FRONT_SINGLE_TAKE_PHOTO_PREVIEW_FPS_MAX" value="24" />
+    <local name="REAR_SINGLE_TAKE_PHOTO_PREVIEW_FPS_MAX" value="24" />
+    <local name="FRONT_SINGLE_TAKE_PHOTO_PREVIEW_FPS_MIN" value="8" />
+    <local name="REAR_SINGLE_TAKE_PHOTO_PREVIEW_FPS_MIN" value="15" />
+    <local name="SINGLE_TAKE_CAPTURE_INTERVAL" value="1000"/>
+
+</resources>

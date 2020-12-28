@@ -1,0 +1,5 @@
+libPolarrSnap.polarr.so
+libPolarrScoreCV.polarr.so
+libBestComposition.polarr.so
+libFeature.polarr.so
+libTracking.polarr.so

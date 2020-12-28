@@ -12,7 +12,7 @@ Its basically automated debloater script for android to debloat your device and 
 
 
 
-## 2. single take
+## 2. single take ( Camera mode ) 
 To download it do   ```git clone https://github.com/neel021000/MODS.git -b singletake singletake``` and push files as given and make change
 in ```system_root/system/cameradata/camerafeatures.xml```
 
@@ -31,5 +31,10 @@ To download it do   ```git clone https://github.com/neel021000/MODS.git -b linux
 its basically automatic script for linux worms who trying varies of distros cz everytime need to download setup things
 ```
 
+## 4. My Filters ( Camera mode )
+To download it do   ```git clone https://github.com/neel021000/MODS.git -b myfilters myfilters``` and push files as given
+```
+its basically camera filters ported from Galaxy M31 Just make sure to add lines from camerafeature.xml
+```
 
 ### Thats it for now Kthnxbye!

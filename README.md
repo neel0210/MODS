@@ -4,11 +4,7 @@
 
 ## 1. debloater
 
-To download it do   ```git clone https://github.com/neel021000/MODS.git -b debloater debloater``` get inside the folder and run the ```.bat script```
-#### What it does?
-```
-Its basically automated debloater script for android to debloat your device and get rid of bloat
-```
+For more info Click on [debloater](https://github.com/neel021000/MODS/tree/debloater/#/debloater) to know how to use it.
 
 ## 2. single take ( Camera mode ) 
 Click on [Guide](https://github.com/neel021000/MODS/blob/singletake/README.md/#/guide) to know how to install it.

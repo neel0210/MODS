@@ -22,7 +22,8 @@ Apps which needed
 - system/priv-app/LiveStickers
 - system/priv-app/SingleTakeService
 
-i have uploaded it, get them from here : [AFH](https://www.androidfilehost.com/?w=files&flid=321399/#/AFH) to Download it.
+i have uploaded it, get them from below 
 ```
+### [AFH](https://www.androidfilehost.com/?w=files&flid=321399/#/AFH) to Download it.
 
 ### That's it for now

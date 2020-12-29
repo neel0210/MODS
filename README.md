@@ -10,6 +10,11 @@
 ```bash
  First you have to enable developer option in your android smart phone
 ```
+#### What it does?
+```
+Its basically automated debloater script for android to debloat your device and get rid of bloat
+```
+
 ```
  if samsung
 
@@ -30,6 +35,10 @@
 <div align="center">
     <img src="https://i.imgur.com/4qcnZde.jpg"/>
 </div>
+
+#
+```git clone https://github.com/neel021000/MODS.git -b debloater debloater``` get inside the folder and run the ```.bat script```
+
 
 ```bash
  Now in developer option find "usb debugging"

@@ -10,8 +10,6 @@ To download it do   ```git clone https://github.com/neel021000/MODS.git -b deblo
 Its basically automated debloater script for android to debloat your device and get rid of bloat
 ```
 
-
-
 ## 2. single take ( Camera mode ) 
 Click on [Guide](https://github.com/neel021000/MODS/blob/singletake/README.md/#/guide) to know how to install it.
 

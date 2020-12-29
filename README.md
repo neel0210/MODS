@@ -1,19 +1,9 @@
-# Mods
+# Mod Info
 
 #### Done by @neel0210 @XDA
 
-## 1. debloater
-
-To download it do   ```git clone https://github.com/neel021000/MODS.git -b debloater``` get inside the folder and run the ```.bat script```
-#### What it does?
-```
-Its basically automated debloater script for android to debloat your device and get rid of bloat
-```
-
-
-
-## 2. single take
-To download it do   ```git clone https://github.com/neel021000/MODS.git -b singletake``` or you can select singletake branch and download zip and then push files as given and make change
+## single take ( Camera mode ) 
+To download it do   ```git clone https://github.com/neel021000/MODS.git -b singletake singletake``` and push files as given and make change
 in ```system_root/system/cameradata/camerafeatures.xml```
 
 ```
@@ -22,7 +12,18 @@ eg. preview-size="nnnnxnnnn" capture-size="nnnnxnnnn" front-capture-size="nnnnxn
 
 you can refer this : preview-size="1440x1080" capture-size="2576x1932" front-capture-size="1440x1080" info="1"/>
 
-rest just push in system and vendor as given and Enjoy!
+rest just push in system and vendor moreover you need some apps to be there if you have them no issue but if you have nuked them you need to add them
+
+Apps which needed
+
+- system/app/ARZone
+- system/app/VisionIntelligence3.5
+- system/priv-app/AREmoji
+- system/priv-app/LiveStickers
+- system/priv-app/SingleTakeService
+
+i have uploaded it, get them from here : AFH https://www.androidfilehost.com/?w=files&flid=321399 
+
 ```
 
-### Thats it for now Kthnxbye!
+### That's it for now

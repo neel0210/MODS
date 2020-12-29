@@ -13,9 +13,7 @@ Click on [Guide](https://github.com/neel021000/MODS/blob/singletake/README.md/#/
 Click on [script](https://github.com/neel021000/MODS/tree/linux/#/script) to know how to install it.
 
 ## 4. My Filters ( Camera mode )
-To download it do   ```git clone https://github.com/neel021000/MODS.git -b myfilters myfilters``` and push files as given
-```
-its basically camera filters ported from Galaxy M31 Just make sure to add lines from camerafeature.xml & Floating feature
-```
+Click on [filters](https://github.com/neel021000/MODS/tree/myfilters#/filters) to know how to install it.
+
 
 ### Thats it for now Kthnxbye!

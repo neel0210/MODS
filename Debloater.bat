@@ -30,6 +30,22 @@ adb shell pm uninstall -k com.android.chrome
 adb shell pm uninstall -k com.google.android.youtube
 adb shell pm uninstall -k com.google.android.tts
 adb shell pm uninstall -k com.google.android.googlequicksearchbox
+adb shell pm uninstall -k com.google.android.apps.tachyon
+adb shell pm uninstall -k com.google.android.apps.docs
+adb shell pm uninstall -k com.google.android.gm
+adb shell pm uninstall -k com.google.android.videos
+adb shell pm uninstall -k com.google.android.music
+adb shell pm uninstall -k com.google.android.tts
+adb shell pm uninstall -k com.google.android.apps.maps
+adb shell pm uninstall -k com.google.android.apps.photos
+adb shell pm uninstall -k com.google.android.youtube
+timeout /t 2 /nobreak > nul
+echo (--------------------------------------)
+echo                Facebook
+echo (--------------------------------------)
+adb shell pm uninstall -k com.facebook.system
+adb shell pm uninstall -k com.facebook.appmanager
+adb shell pm uninstall -k com.facemoji.lite.xiaomi
 timeout /t 2 /nobreak > nul
 echo (--------------------------------------)
 echo                Microsoft
@@ -58,6 +74,11 @@ echo (--------------------------------------------------------)
 echo  Redmi-apps, ignore if u dont have redmi device and wait
 echo (--------------------------------------------------------)
 adb shell pm uninstall -k com.miui.cleanmaster
+adb shell pm uninstall -k com.xiaomi.mipicks
+adb shell pm uninstall -k com.xiaomi.payment
+adb shell pm uninstall -k com.mipay.wallet.in
+adb shell pm uninstall -k com.xiaomi.midrop
+adb shell pm uninstall -k com.miui.miservice
 adb shell pm uninstall -k com.miui.daemon
 adb shell pm uninstall -k com.miui.msa.global
 adb shell pm uninstall -k com.mi.webkit.core
@@ -88,6 +109,7 @@ adb shell pm uninstall -k com.miui.translation.youdao
 adb shell pm uninstall -k com.miui.translation.xmcloud
 adb shell pm uninstall -k com.miui.translationservice
 adb shell pm uninstall -k cn.wps.xiaomi.abroad.lite
+adb shell pm uninstall -k com.wps.xiaomi.abroad.lite
 adb shell pm uninstall -k com.xiaomi.mirecycle
 adb shell pm uninstall -k com.miui.global.packageinstaller
 adb shell pm uninstall -k android.autoinstalls.config.Xiaomi.ginkgo

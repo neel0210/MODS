@@ -14,17 +14,27 @@ echo ##############################################
 timeout /t 5 /nobreak > nul
 echo  Removing below mentioned services/apps
 @echo off
+######################################################
+#  To uninstall user apps : pm uninstall -k --user 0 #
+#  To disable them : pm disable-user --user 0        #
+######################################################
 echo (--------------------------------------)
-echo                Facebook
+echo                Facebook apps
 echo (--------------------------------------)
 adb shell pm uninstall -k com.facebook.services
 adb shell pm uninstall -k com.facebook.katana
 adb shell pm uninstall -k com.facebook.system
 adb shell pm uninstall -k com.facebook.appmanager
 adb shell pm uninstall -k com.vanced.android.youtube
+adb shell pm uninstall -k com.facebook.system
+adb shell pm uninstall -k com.facebook.appmanager
+adb shell pm uninstall -k com.facemoji.lite.xiaomi
+adb shell pm uninstall –k ––user 0 com.facebook.appmanager
+adb shell pm uninstall –k ––user 0 com.facebook.services
+adb shell pm uninstall –k ––user 0 com.facebook.system
 timeout /t 2 /nobreak > nul
 echo (--------------------------------------)
-echo                 Google
+echo                 Google apps
 echo (--------------------------------------)
 adb shell pm uninstall -k com.android.chrome
 adb shell pm uninstall -k com.google.android.youtube
@@ -41,14 +51,7 @@ adb shell pm uninstall -k com.google.android.apps.photos
 adb shell pm uninstall -k com.google.android.youtube
 timeout /t 2 /nobreak > nul
 echo (--------------------------------------)
-echo                Facebook
-echo (--------------------------------------)
-adb shell pm uninstall -k com.facebook.system
-adb shell pm uninstall -k com.facebook.appmanager
-adb shell pm uninstall -k com.facemoji.lite.xiaomi
-timeout /t 2 /nobreak > nul
-echo (--------------------------------------)
-echo                Microsoft
+echo                Microsoft apps
 echo (--------------------------------------)
 adb shell pm uninstall -k com.microsoft.office.powerpoint
 adb shell pm uninstall -k com.microsoft.office.excel
@@ -56,12 +59,12 @@ adb shell pm uninstall -k com.microsoft.office.word
 adb shell pm uninstall -k com.microsoft.skydrive
 timeout /t 2 /nobreak > nul
 echo (--------------------------------------)
-echo                Linkedin
+echo                Linkedin sppd
 echo (--------------------------------------)
 adb shell pm uninstall -k com.linkedin.android
 timeout /t 2 /nobreak > nul
 echo (--------------------------------------)
-echo                 Bixby
+echo                 Bixby apps
 echo (--------------------------------------)
 adb shell pm uninstall -k com.samsung.android.bixby.wakeup
 adb shell pm uninstall -k com.samsung.android.bixby.service
@@ -69,6 +72,15 @@ adb shell pm uninstall -k com.samsung.android.visionintelligence
 adb shell pm uninstall -k com.samsung.android.bixby.agent
 adb shell pm uninstall -k com.samsung.android.bixby.agent.dummy
 adb shell pm uninstall -k com.samsung.android.bixbyvision.framework
+timeout /t 2 /nobreak > nul
+echo (-----------------------------------------------------)
+echo   Realme, ignore if u dont have redmi device and wait 
+echo (-----------------------------------------------------)
+adb shell pm uninstall -k com.coloros.compass2
+adb shell pm uninstall -k com.heytap.market
+adb shell pm uninstall -k com.redteamobile.roaming
+adb shell pm uninstall -k com.heytap.market
+adb shell pm disable–user ––user 0 com.heytap.market
 timeout /t 2 /nobreak > nul
 echo (--------------------------------------------------------)
 echo  Redmi-apps, ignore if u dont have redmi device and wait

@@ -49,6 +49,12 @@ adb shell pm uninstall -k com.google.android.tts
 adb shell pm uninstall -k com.google.android.apps.maps
 adb shell pm uninstall -k com.google.android.apps.photos
 adb shell pm uninstall -k com.google.android.youtube
+adb shell pm uninstall -k com.google.ar.lens
+adb shell pm disable-user --user 0 com.google.ar.lens
+adb shell pm disable-user --user 0 com.google.android.youtube
+adb shell pm disable-user --user 0 com.google.android.gm
+adb shell pm disable-user --user 0 com.google.android.googlequicksearchbox
+adb shell pm disable-user --user 0 com.google.android.apps.maps
 timeout /t 2 /nobreak > nul
 echo (--------------------------------------)
 echo                Microsoft apps
@@ -73,9 +79,9 @@ adb shell pm uninstall -k com.samsung.android.bixby.agent
 adb shell pm uninstall -k com.samsung.android.bixby.agent.dummy
 adb shell pm uninstall -k com.samsung.android.bixbyvision.framework
 timeout /t 2 /nobreak > nul
-echo (-----------------------------------------------------)
-echo   Realme, ignore if u dont have redmi device and wait 
-echo (-----------------------------------------------------)
+echo (----------------------------------------------------------)
+echo   Realme apps, ignore if u dont have redmi device and wait 
+echo (----------------------------------------------------------)
 adb shell pm uninstall -k com.coloros.compass2
 adb shell pm uninstall -k com.heytap.market
 adb shell pm uninstall -k com.redteamobile.roaming
@@ -125,6 +131,10 @@ adb shell pm uninstall -k com.wps.xiaomi.abroad.lite
 adb shell pm uninstall -k com.xiaomi.mirecycle
 adb shell pm uninstall -k com.miui.global.packageinstaller
 adb shell pm uninstall -k android.autoinstalls.config.Xiaomi.ginkgo
+adb shell pm disable-user --user 0 com.xiaomi.mipicks
+adb shell pm disable-user --user 0 com.mipay.wallet.in
+adb shell pm disable-user --user 0 com.xiaomi.midrop
+adb shell pm disable-user --user 0 com.miui.miservice
 timeout /t 2 /nobreak > nul
 echo (--------------------------------------------------------------)
 echo  Exiting script, Now reboot/restart and enjoy debloated Device

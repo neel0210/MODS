@@ -65,9 +65,14 @@ adb shell pm uninstall -k com.microsoft.office.word
 adb shell pm uninstall -k com.microsoft.skydrive
 timeout /t 2 /nobreak > nul
 echo (--------------------------------------)
-echo                Linkedin sppd
+echo                Linkedin Apps
 echo (--------------------------------------)
 adb shell pm uninstall -k com.linkedin.android
+timeout /t 2 /nobreak > nul
+echo (--------------------------------------)
+echo                Samsung Apps
+echo (--------------------------------------)
+com.sec.android.app.sbrowse
 timeout /t 2 /nobreak > nul
 echo (--------------------------------------)
 echo                 Bixby apps

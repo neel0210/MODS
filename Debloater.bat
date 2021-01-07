@@ -73,7 +73,7 @@ timeout /t 2 /nobreak > nul
 echo (--------------------------------------)
 echo                Samsung Apps
 echo (--------------------------------------)
-adb shell pm uninstall -k com.sec.android.app.sbrowse
+adb shell pm uninstall -k com.sec.android.app.sbrowser
 adb shell pm uninstall -k com.sec.android.email.provider
 adb shell pm uninstall -k com.sec.android.app.voicenote
 adb shell pm uninstall -k com.sec.android.beaconmanage

@@ -32,6 +32,7 @@ adb shell pm uninstall -k com.facemoji.lite.xiaomi
 adb shell pm uninstall –k ––user 0 com.facebook.appmanager
 adb shell pm uninstall –k ––user 0 com.facebook.services
 adb shell pm uninstall –k ––user 0 com.facebook.system
+adb shell pm uninstall -k com.sec.android.app.DataCreate
 timeout /t 2 /nobreak > nul
 echo (--------------------------------------)
 echo                 Google apps
@@ -72,7 +73,24 @@ timeout /t 2 /nobreak > nul
 echo (--------------------------------------)
 echo                Samsung Apps
 echo (--------------------------------------)
-com.sec.android.app.sbrowse
+adb shell pm uninstall -k com.sec.android.app.sbrowse
+adb shell pm uninstall -k com.sec.android.email.provider
+adb shell pm uninstall -k com.sec.android.app.voicenote
+adb shell pm uninstall -k com.sec.android.beaconmanage
+adb shell pm uninstall -k com.sec.android.dynamiclock
+adb shell pm uninstall -k com.sec.android.dynsystem
+adb shell pm uninstall -k com.sec.android.app.samsungapps
+adb shell pm uninstall -k com.sec.android.game.gameho
+adb shell pm uninstall -k com.sec.android.game.gametool
+adb shell pm uninstall -k com.sec.android.service.health
+adb shell pm uninstall -k com.sec.android.icecone
+adb shell pm uninstall -k com.sec.android.keyguardmgsup
+adb shell pm uninstall -k com.sec.android.sprotect
+adb shell pm uninstall -k com.sec.android.securefolder
+adb shell pm uninstall -k com.sec.android.app.camera.sticker.facear.preload
+adb shell pm uninstall -k com.sec.android.themecenter
+adb shell pm uninstall -k com.sec.android.themestore
+adb shell pm uninstall -k com.sec.android.app.sbrowser.lite
 timeout /t 2 /nobreak > nul
 echo (--------------------------------------)
 echo                 Bixby apps

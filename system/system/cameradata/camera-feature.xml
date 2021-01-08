@@ -1,0 +1,8 @@
+<?xml version= "1.0" encoding= "UTF-8"?>
+<resources>
+
+    <!-- Shootingmode -->
+    <local name="SHOOTING_MODE_LIVE_FOCUS" back="REAR_FOCUS_LITE" front="SELFIE_FOCUS" enable="true" more="false" order="x" info="x"/>
+	
+	change value of "X" according to your mode number
+</resources>

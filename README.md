@@ -16,6 +16,6 @@ Click on [script](https://github.com/neel021000/MODS/tree/linux/#/script) to kno
 Click on [filters](https://github.com/neel021000/MODS/tree/myfilters#/filters) to know how to install it.
 
 ## 5. live focus
-Click on [LiveFocus](https://github.com/neel021000/MODS/tree/livefocus#/livefocus) to know how to install it.
+Click on [LiveFocus](https://github.com/neel021000/MODS/tree/singletake) to know how to install it.
 
 ### Thats it for now Kthnxbye!

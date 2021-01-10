@@ -20,6 +20,7 @@ sudo apt install github-desktop
 echo "******************************************************************************* "
 echo installing kernel depen......
 echo "******************************************************************************* "
+sudo apt install python
 sudo apt update && sudo apt upgrade && sudo apt install gcc && sudo apt-get install -y build-essential kernel-package libncurses5-dev bzip2 && sudo apt-get install git ccache automake lzop bison gperf build-essential zip curl zlib1g-dev zlib1g-dev:i386 g++-multilib python-networkx libxml2-utils bzip2 libbz2-dev libbz2-1.0 libghc-bzlib-dev squashfs-tools pngcrush schedtool dpkg-dev liblz4-tool make optipng
 sudo apt-get install manpages-de && sudo apt-get install gcc-arm-linux-gnueabi
 sudo apt-get install libssl-dev

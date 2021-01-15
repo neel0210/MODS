@@ -152,6 +152,26 @@ adb shell pm uninstall -k com.miui.translationservice
 adb shell pm uninstall -k cn.wps.xiaomi.abroad.lite
 adb shell pm uninstall -k com.wps.xiaomi.abroad.lite
 adb shell pm uninstall -k com.xiaomi.mirecycle
+adb shell pm uninstall -k com.xunmeng.pinduoduo
+adb shell pm uninstall -k com.xiaomi.midrop
+adb shell pm uninstall -k com.tencent.mtt
+adb shell pm uninstall -k com.eg.android.alipayGphone
+adb shell pm uninstall -k com.dragon.read
+adb shell pm uninstall -k com.taobao.taobao
+adb shell pm uninstall -k com.tencent.qqlive
+adb shell pm uninstall -k com.qiyi.video
+adb shell pm uninstall -k com.ss.android.article.news
+adb shell pm uninstall -k com.wps.moffice_eng
+adb shell pm uninstall -k com.sina.weibo
+adb shell pm uninstall -k com.xiaomi.jr
+adb shell pm uninstall -k com.ss.android.ugc.aweme
+adb shell pm uninstall -k com.baidu.BaiduMap
+adb shell pm uninstall -k com.xiaomi.youpin
+adb shell pm uninstall -k com.duokan.reader
+adb shell pm uninstall -k com.xiaomi.vipaccount
+adb shell pm uninstall -k com.mipay.wallet
+adb shell pm uninstall -k com.miui.miservice
+adb shell pm uninstall -k com.android.email
 adb shell pm uninstall -k com.miui.global.packageinstaller
 adb shell pm uninstall -k android.autoinstalls.config.Xiaomi.ginkgo
 adb shell pm disable-user --user 0 com.xiaomi.mipicks

@@ -1,24 +1,21 @@
-# Mods
+# Mod Info
 
 #### Done by @neel0210 @XDA
 
-## 1. debloater
+## Dynamic ( Kitchen ) 
+To download it do   ```git clone https://github.com/neel0210/dynamic.git```
 
-For more info Click on [debloater](https://github.com/neel021000/MODS/tree/debloater/#/debloater) to know how to use it.
+### extracting stuff
+* Note: Some devices have only: system, odm, vendor and product. Oppo/Realme devices can have oppo_product, then use imjtool binary its there too!!
+* Shell time:
+```
+chmod a+x ./neel.sh
+./neel.sh
 
-## 2. single take ( Camera mode ) 
-Click on [Guide](https://github.com/neel021000/MODS/blob/singletake/README.md/#/guide) to know how to install it.
+or
 
-## 3. linux installation script
-Click on [script](https://github.com/neel021000/MODS/tree/linux/#/script) to know how to install it.
+. neel.sh
+```
+- choose as per your need!
 
-## 4. My Filters ( Camera mode )
-Click on [filters](https://github.com/neel021000/MODS/tree/myfilters#/filters) to know how to install it.
-
-## 5. live focus
-Click on [LiveFocus](https://github.com/neel021000/MODS/tree/singletake) to know how to install it.
-
-## 6. Dynamic kitchen
-Click on [Dynamic](https://github.com/neel0210/dynamic) to know how to use it.
-
-### Thats it for now Kthnxbye!
+### That's it for now

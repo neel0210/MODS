@@ -110,6 +110,16 @@ adb shell pm uninstall -k com.heytap.market
 adb shell pm uninstall -k com.redteamobile.roaming
 adb shell pm uninstall -k com.heytap.market
 adb shell pm disable–user ––user 0 com.heytap.market
+adb shell pm uninstall -k --user 0 com.heytap.browser
+adb shell pm uninstall -k --user 0 com.heytap.market
+adb shell pm uninstall -k --user 0 com.redteamobile.roaming
+adb shell pm uninstall -k --user 0 com.heytap.usercenter
+adb shell pm uninstall -k --user 0 com.heytap.cloud
+adb shell pm uninstall -k --user 0 com.oppo.quicksearchbox
+adb shell pm uninstall -k --user 0 com.coloros.backuprestore
+adb shell pm uninstall -k --user 0 com.coloros.weather2
+adb shell pm uninstall -k --user 0 com.coloros.weather.service
+pm disable-user --user 0 com.nearme.gamecenter
 timeout /t 2 /nobreak > nul
 echo (--------------------------------------------------------)
 echo  Redmi-apps, ignore if u dont have redmi device and wait

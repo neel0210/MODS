@@ -25,6 +25,17 @@ sudo apt update && sudo apt upgrade && sudo apt install gcc && sudo apt-get inst
 sudo apt-get install manpages-de && sudo apt-get install gcc-arm-linux-gnueabi
 sudo apt-get install libssl-dev
 sudo apt install gcc
+sudo apt-get update
+sudo DEBIAN_FRONTEND=noninteractive apt-get install \
+          bison build-essential curl flex git gnupg gperf \
+          liblz4-tool libncurses5-dev libsdl1.2-dev libxml2 \
+          libxml2-utils lzop pngcrush schedtool \
+          squashfs-tools xsltproc zip zlib1g-dev \
+          build-essential kernel-package libncurses5-dev \
+          bzip2 git python expect \
+          gcc-aarch64-linux-gnu g++-aarch64-linux-gnu -y
+curl https://raw.githubusercontent.com/akhilnarang/scripts/master/setup/android_build_env.sh | bash
+echo Thanks to "akhilnarang"          
 echo "******************************************************************************* "
 echo installing sublim installer
 echo "******************************************************************************* "

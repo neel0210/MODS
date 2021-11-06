@@ -26,6 +26,7 @@ sudo apt-get install manpages-de && sudo apt-get install gcc-arm-linux-gnueabi
 sudo apt-get install libssl-dev
 sudo apt install gcc
 sudo apt-get update
+sudo apt-get install gcc-aarch64-linux-gnu
 sudo DEBIAN_FRONTEND=noninteractive apt-get install \
           bison build-essential curl flex git gnupg gperf \
           liblz4-tool libncurses5-dev libsdl1.2-dev libxml2 \

@@ -66,6 +66,7 @@ adb shell pm uninstall -k --user 0 com.android.calllogbackup
 adb shell pm uninstall -k --user 0 com.android.bookmarkprovider
 adb shell pm uninstall -k --user 0 com.google.android.gms.location.history
 adb shell pm uninstall -k --user 0 com.android.providers.calendar
+adb shell pm uninstall -k --user 0 com.android.soundrecorder
 timeout /t 2 /nobreak > nul
 echo (--------------------------------------------------------)
 echo  Redmi-apps, ignore if u dont have redmi device and wait

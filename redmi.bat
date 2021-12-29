@@ -71,6 +71,7 @@ echo (--------------------------------------------------------)
 echo  Redmi-apps, ignore if u dont have redmi device and wait
 echo (--------------------------------------------------------)
 adb shell pm uninstall -k --user 0 com.miui.cleanmaster
+adb shell pm uninstall -k --user 0 com.mi.health
 adb shell pm uninstall -k --user 0 com.xiaomi.mipicks
 adb shell pm uninstall -k --user 0 com.xiaomi.payment
 adb shell pm uninstall -k --user 0 com.mipay.wallet.in

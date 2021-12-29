@@ -143,7 +143,8 @@ adb shell pm uninstall -k --user 0 com.xiaomi.calendar
 adb shell pm uninstall -k --user 0 com.miui.notes
 adb shell pm uninstall -k --user 0 com.miui.compass
 adb shell pm uninstall -k --user 0 com.miui.fm
-# adb shell pm uninstall -k --user 0
+adb shell pm uninstall -k --user 0
+adb shell pm uninstall -k --user 0 
 timeout /t 2 /nobreak > nul
 echo (--------------------------------------------------------------)
 echo  Exiting script, Now reboot/restart and enjoy debloated Device

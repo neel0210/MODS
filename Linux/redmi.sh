@@ -14,10 +14,11 @@ echo # have that app installed, so ignore it      #
 echo ##############################################
 echo  Removing below mentioned services/apps
 echo 
-######################################################
-#  To uninstall user apps : pm uninstall -k --user 0 --user 0 #
-#  To disable them : pm disable-user --user 0        #
-######################################################
+##########################################################
+#  To uninstall user apps : pm uninstall -k --user 0     #
+#  To disable them : pm disable-user --user 0            #
+#  To disable non system app: adb shell pm uninstall -k  #
+##########################################################
 echo "(--------------------------------------)"
 echo                Facebook apps
 echo "(--------------------------------------)"
@@ -33,6 +34,11 @@ adb shell pm uninstall -k --user 0 com.facebook.appmanager
 adb shell pm uninstall -k --user 0 com.facebook.services
 adb shell pm uninstall -k --user 0 com.facebook.system
 adb shell pm uninstall -k --user 0 com.sec.android.app.DataCreate
+sleep 2
+echo "(--------------------------------------)"
+echo                Linked IN
+echo "(--------------------------------------)"
+adb shell pm uninstall -k com.linkedin.android
 sleep 2
 echo "(--------------------------------------)"
 echo                 Google apps
@@ -144,7 +150,13 @@ adb shell pm uninstall -k --user 0 com.xiaomi.calendar
 adb shell pm uninstall -k --user 0 com.miui.notes
 adb shell pm uninstall -k --user 0 com.miui.compass
 adb shell pm uninstall -k --user 0 com.miui.fm
-# adb shell pm uninstall -k --user 0
+echo "(------------------------------)"
+echo     Extra bloat given in MIUI
+echo "(------------------------------)"
+adb shell pm uninstall -k com.netflix.mediaclient
+adb shell pm uninstall -k com.mi.global.shop
+adb shell pm uninstall -k com.mi.global.bbs
+adb shell pm uninstall -k com.sukhavati.gotoplaying.bubble.BubbleShooter.mint
 sleep 2
 echo "(--------------------------------------------------------------)"
 echo  Exiting script, Now reboot/restart and enjoy debloated Device

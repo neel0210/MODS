@@ -1,7 +1,7 @@
 echo
 echo "(-------------------------------------------------------)" 
 echo  Debloater Script for NON ROOTED Users
-echo  Ultimate debloater for Redmi (use at it your own risk)
+echo  Ultimate debloater for Redmi use at it your own risk
 echo  Done by @neel0210
 echo "(-------------------------------------------------------)"
 adb kill-server

@@ -21,4 +21,7 @@ Click on [LiveFocus](https://github.com/neel021000/MODS/tree/singletake) to know
 ## 6. Dynamic kitchen
 Click on [Dynamic](https://github.com/neel0210/dynamic) to know how to use it.
 
+## 7. Redmi Flasher
+Click on [Flasher](https://github.com/neel0210/Redmi-flasher) to know how to use it.
+
 ### Thats it for now Kthnxbye!

@@ -153,10 +153,12 @@ adb shell pm uninstall -k --user 0 com.miui.fm
 echo "(------------------------------)"
 echo     Extra bloat given in MIUI
 echo "(------------------------------)"
-adb shell pm uninstall -k com.netflix.mediaclient
-adb shell pm uninstall -k com.mi.global.shop
-adb shell pm uninstall -k com.mi.global.bbs
-adb shell pm uninstall -k com.sukhavati.gotoplaying.bubble.BubbleShooter.mint
+adb shell pm uninstall -k --user 0 com.netflix.mediaclient
+adb shell pm uninstall -k --user 0 com.linkedin.android
+adb shell pm uninstall -k --user 0 in.amazon.mShop.android.shopping
+adb shell pm uninstall -k --user 0 com.mi.global.shop
+adb shell pm uninstall -k --user 0 com.mi.global.bbs
+adb shell pm uninstall -k --user 0 com.sukhavati.gotoplaying.bubble.BubbleShooter.mint
 sleep 2
 echo "(--------------------------------------------------------------)"
 echo  Exiting script, Now reboot/restart and enjoy debloated Device

@@ -145,6 +145,9 @@ adb shell pm uninstall -k --user 0 com.xiaomi.calendar
 adb shell pm uninstall -k --user 0 com.miui.notes
 adb shell pm uninstall -k --user 0 com.miui.compass
 adb shell pm uninstall -k --user 0 com.miui.fm
+adb shell pm uninstall -k --user 0 com.netflix.mediaclient
+adb shell pm uninstall -k --user 0 com.linkedin.android
+adb shell pm uninstall -k --user 0 in.amazon.mShop.android.shopping
 # adb shell pm uninstall -k --user 0
 timeout /t 2 /nobreak > nul
 echo (--------------------------------------------------------------)

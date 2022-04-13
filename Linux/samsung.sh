@@ -91,6 +91,14 @@ adb shell pm uninstall -k --user 0 com.sec.android.app.camera.sticker.facear.pre
 adb shell pm uninstall -k --user 0 com.sec.android.themecenter
 adb shell pm uninstall -k --user 0 com.sec.android.themestore
 adb shell pm uninstall -k --user 0 com.sec.android.app.sbrowser.lite
+adb shell pm uninstall -k --user 0 com.aura.oobe.samsung
+adb shell pm uninstall -k --user 0 com.samsung.android.mapsagent
+adb shell pm uninstall -k --user 0 com.samsung.android.app.routines
+adb shell pm uninstall -k --user 0 com.mygalaxy
+adb shell pm uninstall -k --user 0 com.opera.max.preinstall
+adb shell pm uninstall -k --user 0 com.samsung.android.aoo.spage
+adb shell pm uninstall -k --user 0 com.samsung.android.spaymini
+adb shell pm uninstall -k --user 0 com.samsung.android.app.tips
 sleep 2
 echo "(--------------------------------------)"
 echo                 Bixby apps

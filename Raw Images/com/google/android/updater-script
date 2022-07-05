@@ -1,0 +1,57 @@
+#ASSERT
+assert(getprop("ro.product.device") == "a50" || getprop("ro.build.product") == "a50" || getprop("ro.product.name") == "a50" ||
+    abort("This package is for \"a50\" devices; this is a \"" + getprop("ro.build.product") + "\"."););
+show_progress(1.000000, 0);
+ui_print(" ");
+ui_print(" ");
+ui_print("A505FN March Installer");
+ui_print("Built with SuperR's Kitchen");
+ui_print(" ");
+ui_print(" ");
+ui_print(" ");
+ui_print(" ");
+ui_print("Checking config ...");
+ui_print(" ");
+package_extract_dir("install", "/tmp/install");
+set_metadata_recursive("/tmp/install", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644);
+set_metadata_recursive("/tmp/install/bin", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0755);
+run_program("/tmp/install/bin/busybox", "sh", "/tmp/install/bin/configure.sh");
+ifelse(file_getprop("/tmp/config", "fail"), abort("ERROR: Partition paths not found."));
+#UNMOUNT
+ifelse(is_mounted("/product"), unmount("/product"));
+ifelse(is_mounted("/vendor"), unmount("/vendor"));
+ifelse(is_mounted(file_getprop("/tmp/config", "sysmnt")), unmount(file_getprop("/tmp/config", "sysmnt")));
+#MOUNT
+ifelse(is_mounted("/product"), "", mount("ext4", "EMMC", file_getprop("/tmp/config", "product"), "/product"));
+ifelse(is_mounted("/vendor"), "", mount("ext4", "EMMC", file_getprop("/tmp/config", "vendor"), "/vendor"));
+ifelse(is_mounted(file_getprop("/tmp/config", "sysmnt")), "", mount("ext4", "EMMC", file_getprop("/tmp/config", "system"), file_getprop("/tmp/config", "sysmnt")));
+run_program("/tmp/install/bin/busybox", "sh", "/tmp/install/bin/backuptool.sh", "backup");
+ui_print("Extracting system...");
+ui_print(" ");
+package_extract_file("system_new.img", file_getprop("/tmp/config", "system"));
+ui_print("Extracting product ..."); ui_print(" ");
+package_extract_file("product_new.img", file_getprop("/tmp/config", "product"));
+ui_print("Extracting vendor ..."); ui_print(" ");
+package_extract_file("vendor_new.img", file_getprop("/tmp/config", "vendor"));
+set_progress(0.700000);
+ui_print(" "); ui_print("Extracting boot image..."); ui_print(" ");
+package_extract_file("boot.img", file_getprop("/tmp/config", "boot"));
+set_progress(0.800000);
+#UNMOUNT
+ifelse(is_mounted("/product"), unmount("/product"));
+ifelse(is_mounted("/vendor"), unmount("/vendor"));
+ifelse(is_mounted(file_getprop("/tmp/config", "sysmnt")), unmount(file_getprop("/tmp/config", "sysmnt")));
+#ROOT
+ui_print(" ");
+#BUSYBOX
+#MOUNT
+ifelse(is_mounted("/product"), "", mount("ext4", "EMMC", file_getprop("/tmp/config", "product"), "/product"));
+ifelse(is_mounted("/vendor"), "", mount("ext4", "EMMC", file_getprop("/tmp/config", "vendor"), "/vendor"));
+ifelse(is_mounted(file_getprop("/tmp/config", "sysmnt")), "", mount("ext4", "EMMC", file_getprop("/tmp/config", "system"), file_getprop("/tmp/config", "sysmnt")));
+run_program("/tmp/install/bin/busybox", "sh", "/tmp/install/bin/backuptool.sh", "restore");
+#UNMOUNT
+ifelse(is_mounted("/product"), unmount("/product"));
+ifelse(is_mounted("/vendor"), unmount("/vendor"));
+ifelse(is_mounted(file_getprop("/tmp/config", "sysmnt")), unmount(file_getprop("/tmp/config", "sysmnt")));
+set_progress(1.000000);
+ui_print("A505FN March Installed");

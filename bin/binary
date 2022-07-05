@@ -1,0 +1,90 @@
+#!bin/bash
+clear
+# variables
+echo -e "\n"
+LOGO="\n   █████▒██▓ ██▀███   ███▄ ▄███▓ █     █░ ▄▄▄       ██▀███  ▓█████    ▓█████ ▒██   ██▒▄▄▄█████▓ ██▀███   ▄▄▄       ▄████▄  ▄▄▄█████▓ ▒█████   ██▀███  \n▓██   ▒▓██▒▓██ ▒ ██▒▓██▒▀█▀ ██▒▓█░ █ ░█░▒████▄    ▓██ ▒ ██▒▓█   ▀    ▓█   ▀ ▒▒ █ █ ▒░▓  ██▒ ▓▒▓██ ▒ ██▒▒████▄    ▒██▀ ▀█  ▓  ██▒ ▓▒▒██▒  ██▒▓██ ▒ ██▒\n▒████ ░▒██▒▓██ ░▄█ ▒▓██    ▓██░▒█░ █ ░█ ▒██  ▀█▄  ▓██ ░▄█ ▒▒███      ▒███   ░░  █   ░▒ ▓██░ ▒░▓██ ░▄█ ▒▒██  ▀█▄  ▒▓█    ▄ ▒ ▓██░ ▒░▒██░  ██▒▓██ ░▄█ ▒\n░▓█▒  ░░██░▒██▀▀█▄  ▒██    ▒██ ░█░ █ ░█ ░██▄▄▄▄██ ▒██▀▀█▄  ▒▓█  ▄    ▒▓█  ▄  ░ █ █ ▒ ░ ▓██▓ ░ ▒██▀▀█▄  ░██▄▄▄▄██ ▒▓▓▄ ▄██▒░ ▓██▓ ░ ▒██   ██░▒██▀▀█▄  \n░▒█░   ░██░░██▓ ▒██▒▒██▒   ░██▒░░██▒██▓  ▓█   ▓██▒░██▓ ▒██▒░▒████▒   ░▒████▒▒██▒ ▒██▒  ▒██▒ ░ ░██▓ ▒██▒ ▓█   ▓██▒▒ ▓███▀ ░  ▒██▒ ░ ░ ████▓▒░░██▓ ▒██▒\n ▒ ░   ░▓  ░ ▒▓ ░▒▓░░ ▒░   ░  ░░ ▓░▒ ▒   ▒▒   ▓▒█░░ ▒▓ ░▒▓░░░ ▒░ ░   ░░ ▒░ ░▒▒ ░ ░▓ ░  ▒ ░░   ░ ▒▓ ░▒▓░ ▒▒   ▓▒█░░ ░▒ ▒  ░  ▒ ░░   ░ ▒░▒░▒░ ░ ▒▓ ░▒▓░\n ░      ▒ ░  ░▒ ░ ▒░░  ░      ░  ▒ ░ ░    ▒   ▒▒ ░  ░▒ ░ ▒░ ░ ░  ░    ░ ░  ░░░   ░▒ ░    ░      ░▒ ░ ▒░  ▒   ▒▒ ░  ░  ▒       ░      ░ ▒ ▒░   ░▒ ░ ▒░\n ░ ░    ▒ ░  ░░   ░ ░      ░     ░   ░    ░   ▒     ░░   ░    ░         ░    ░    ░    ░        ░░   ░   ░   ▒   ░          ░      ░ ░ ░ ▒    ░░   ░ \n        ░     ░            ░       ░          ░  ░   ░        ░  ░      ░  ░ ░    ░              ░           ░  ░░ ░                   ░ ░     ░     \n                                                                                                                 ░                                   \n                                           Coded by Neel0210"
+echo -e "$LOGO\n"
+echo -e "						 for Samsung\n"
+WD=$(pwd)
+if [ -f *SM*.zip ]
+then
+	ROM=$(ls *.zip)
+
+	if [ -f $ROM ]
+	then
+		if [ -d FW ]
+		then
+			echo "FW Folder Found, Thus Nuking it."
+			rm -rf FW
+			sleep 2
+			clear
+		fi	
+			echo -e "$LOGO\n"	
+			echo -e "=>  Do you Want to Extract $ROM"
+			read -p "=>  y/n?: " choice
+		if [ $choice == y ]
+		then
+			mkdir FW && mv $ROM FW && cd FW && 7z x $ROM && mkdir BAK_ZIP && mv $ROM BAK_ZIP
+			clear
+			echo -e "$LOGO\n"
+			echo -e "=> Extracting AP"
+			for F in AP*.tar.md5; do echo -n "$F " && mkdir AP && mv $F AP && cd AP &&
+			EXP=($(tail --lines=1 "$F")) &&
+			ACT=($(head --lines=-1 "$F" | md5sum)) &&
+				if [ ${EXP[0]} = ${ACT[0]} ]; then echo -n "md5ok " &&
+				tar --extract --file "$F" && echo "done" 
+				else echo "FAIL"; fi; done &&
+			unlz4 --multiple --verbose *.lz4 && clear
+			echo -e "$LOGO\n"
+			echo -e "Performing cleanup"
+					rm -rf *.lz4
+					rm -rf *.bin
+					rm -rf meta-data
+					rm -rf $F
+				cd ..
+					rm -rf *.tar.md5
+					rm -rf *.txt
+					cd $WD
+					sudo chmod -R 777 FW
+					cd FW/AP
+					clear
+					echo -e "$LOGO\n"
+					echo -e "Showing Files details and files can be found at Firmware_extractor/FW/AP/ "
+					tree -h --du
+					clear
+					echo -e "$LOGO\n"
+					echo -e "Getting you RAW/EXT4 image"
+					cd $WD
+					sudo cp -r bin/simg2img FW/AP
+					cd FW/AP
+					sudo chmod -R 777 simg2img
+					if [ -f super.img ]
+					then
+						echo -e "Super.img found"
+						simg2img super.img super.raw
+						sudo rm -rf *.img
+						mv super.raw super.raw.img
+						sudo rm -rf simg2img
+						tree -h --du
+						sleep 4
+					elif [ -f system.img ] | [ -f vendor.img ] 
+					then
+						echo -e "System and vendor images found"
+						simg2img system.img system.raw
+						simg2img vendor.img vendor.raw
+						sudo rm -rf *.img
+						mv system.raw system.raw.img
+						mv vendor.raw vendor.raw.img
+						sudo rm -rf simg2img
+						tree -h --du
+						sleep 4
+					fi
+					sudo chmod -R 777 *
+					clear
+					cd $WD
+		fi
+	else
+		echo -e "$LOGO\n"
+		echo -e "NO firmware found to be Extracted"
+	fi
+fi

@@ -1,27 +1,21 @@
-# Mods
+# Firmware_extractor by Neel0210
+For those who like manual way to do stuff, here's the fw extractor for samsung which extracts fw files and get you raw image(s).
 
-#### Done by @neel0210 @XDA
+# Screenshots
+<div align="center">
+    <img src="https://i.imgur.com/2MIbyur.png"/>
+</div>
 
-## 1. debloater
+# How to clone and use it?
+clone repo by hitting  `git clone https://github.com/neel0210/Firmware_extractor.git` in terminal.
+Then `cd Firmware_extractor` and
+then excecute it by doing `. extract` or `bash extract` and follow screen instructions.
 
-For more info Click on [debloater](https://github.com/neel021000/MODS/tree/debloater/#/debloater) to know how to use it.
+# Note
+if youre using for the first time do this inside `Firmware_extractor` folder `bash bin/utils.sh` and make sure you put your SAMSUNG firmware file in `Firmware_extractor` folder else it wont detect it.
 
-## 2. single take ( Camera mode ) 
-Click on [Guide](https://github.com/neel021000/MODS/blob/singletake/README.md/#/guide) to know how to install it.
-
-## 3. linux installation script
-Click on [script](https://github.com/neel021000/MODS/tree/linux/#/script) to know how to install it.
-
-## 4. My Filters ( Camera mode )
-Click on [filters](https://github.com/neel021000/MODS/tree/myfilters#/filters) to know how to install it.
-
-## 5. live focus
-Click on [LiveFocus](https://github.com/neel021000/MODS/tree/singletake) to know how to install it.
-
-## 6. Dynamic kitchen
-Click on [Dynamic](https://github.com/neel0210/dynamic) to know how to use it.
-
-## 7. Redmi Flasher
-Click on [Flasher](https://github.com/neel0210/Redmi-flasher) to know how to use it.
-
-### Thats it for now Kthnxbye!
+# Credits
+@DAvinash97 : ``for helping me in everything and solving my queries on REAL-TIME.`` 
+@Astrako : ``for helping me in everything and keep me motivating to do new stuff.``
+@yespap : `For getting me latest simg2img  binaries`
+7z, simg2img and tree: ``for tool utilities.``

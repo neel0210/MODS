@@ -1,0 +1,19 @@
+#!bin/bash
+# Exp
+if [ -f *SM*.zip ]
+then
+	sudo bash bin/binary
+		echo -e "=> So do you Want to Exit now?"
+		read -p "=>  y/n?: " choice
+		if [ $choice == y ]
+		then
+			clear
+			echo -e "$LOGO\n"
+			echo -e "exiting..."
+			sleep 3
+			exit
+		fi
+else
+	echo "No FW file found to be extarcted"
+fi
+

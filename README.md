@@ -1,27 +1,28 @@
-# Mods
+![icon](META-INF/icon/icon.png)
 
-#### Done by @neel0210 @XDA
+### _Simple packing solution for those who like to tinker with BootAnimations on Samsung devices_
 
-## 1. debloater
+# Usage
+### Put 3 qmgs to Bootanimation folder
 
-For more info Click on [debloater](https://github.com/neel021000/MODS/tree/debloater/#/debloater) to know how to use it.
+# If Windows 
+- Double click on make.bat
 
-## 2. single take ( Camera mode ) 
-Click on [Guide](https://github.com/neel021000/MODS/blob/singletake/README.md/#/guide) to know how to install it.
+# If Linux
+- run `chmod a+x make.sh && bash make.sh`
 
-## 3. linux installation script
-Click on [script](https://github.com/neel021000/MODS/tree/linux/#/script) to know how to install it.
+## What script does?
 
-## 4. My Filters ( Camera mode )
-Click on [filters](https://github.com/neel021000/MODS/tree/myfilters#/filters) to know how to install it.
+- It simply renames 
+- `boot.qmg` to `bootsamsung.qmg`
+- `loop.qmg` to `bootsamsungloop.qmg`
+- `shut.qmg` to `shutdown.qmg`
 
-## 5. live focus
-Click on [LiveFocus](https://github.com/neel021000/MODS/tree/singletake) to know how to install it.
+### Then
 
-## 6. Dynamic kitchen
-Click on [Dynamic](https://github.com/neel0210/dynamic) to know how to use it.
+- It moves those renamed qmgs to its respective folder
+- And lastly it makes flashable zip out of it by the name of `KKRT_BootAnim_720x2018.zip`
 
-## 7. Redmi Flasher
-Click on [Flasher](https://github.com/neel0210/Redmi-flasher) to know how to use it.
-
-### Thats it for now Kthnxbye!
+# Credits
+### - @MrWaehere for his script and work with [CRB kitchen.](https://forum.xda-developers.com/t/tool-windows-kitchen-crb-v3-0-0-beta14.3947779/)
+### - @sexynos300 for Editing Banner and logos.

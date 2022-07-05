@@ -1,0 +1,18 @@
+How to LOG :-
+
+1-Install Universal ADB drivers if you dont have them
+
+2-In your phone Enable USB debugging in developer options (if in a bootloop no need if your kernel has ADB support for example refined kernel)
+
+3-Double click on the needed log type
+
+4-Send the generated .log file
+
+log-all 	= Verbose logcat, basiclly everything
+log-error 	= E filter logcat, for Bootloops/App crashes
+log-ril 	= Logcat for simcard issues and no signal etc
+log-kmsg	= Log for Kernel crashes or stuck at splash screen
+log-dmsg	= Log for kernel on an active system
+
+
+P.S : if you see nothing after adb devices or you see device not found, that means check step 1/2

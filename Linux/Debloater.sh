@@ -1,4 +1,4 @@
-echo
+echo " "
 echo "(--------------------------------------)" 
 echo  Debloater Script for NON ROOTED Users
 echo  Done by @neel0210

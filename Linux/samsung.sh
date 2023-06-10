@@ -56,6 +56,7 @@ adb shell pm disable-user --user 0 com.google.android.youtube
 adb shell pm disable-user --user 0 com.google.android.gm
 adb shell pm disable-user --user 0 com.google.android.googlequicksearchbox
 adb shell pm disable-user --user 0 com.google.android.apps.maps
+adb shell pm uninstall -k --user 0 com.google.android.apps.messaging
 sleep 2
 echo "(--------------------------------------)"
 echo                Microsoft apps
@@ -95,6 +96,11 @@ adb shell pm uninstall -k --user 0 com.aura.oobe.samsung
 adb shell pm uninstall -k --user 0 com.samsung.android.mapsagent
 adb shell pm uninstall -k --user 0 com.samsung.android.app.routines
 adb shell pm uninstall -k --user 0 com.mygalaxy
+adb shell pm uninstall -k --user 0 com.samsung.android.app.spage
+adb shell pm uninstall -k --user 0 com.samsung.ecomm.global.in
+adb shell pm uninstall -k --user 0 com.netflix.mediaclient
+adb shell pm uninstall -k --user 0 com.opera.max.oem
+adb shell pm uninstall -k --user 0 com.sec.android.app.fm
 adb shell pm uninstall -k --user 0 com.opera.max.preinstall
 adb shell pm uninstall -k --user 0 com.samsung.android.aoo.spage
 adb shell pm uninstall -k --user 0 com.samsung.android.spaymini

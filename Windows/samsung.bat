@@ -37,7 +37,6 @@ timeout /t 2 /nobreak > nul
 echo (--------------------------------------)
 echo                 Google apps
 echo (--------------------------------------)
-adb shell pm uninstall -k --user 0 com.android.chrome
 adb shell pm uninstall -k --user 0 com.google.android.youtube
 adb shell pm uninstall -k --user 0 com.google.android.tts
 adb shell pm uninstall -k --user 0 com.google.android.googlequicksearchbox
@@ -46,6 +45,7 @@ adb shell pm uninstall -k --user 0 com.google.android.apps.docs
 adb shell pm uninstall -k --user 0 com.google.android.gm
 adb shell pm uninstall -k --user 0 com.google.android.videos
 adb shell pm uninstall -k --user 0 com.google.android.music
+adb shell pm uninstall -k --user 0 com.google.android.apps.youtube.music
 adb shell pm uninstall -k --user 0 com.google.android.tts
 adb shell pm uninstall -k --user 0 com.google.android.apps.maps
 adb shell pm uninstall -k --user 0 com.google.android.apps.photos
@@ -54,9 +54,15 @@ adb shell pm uninstall -k --user 0 com.google.ar.lens
 adb shell pm disable-user --user 0 com.google.ar.lens
 adb shell pm disable-user --user 0 com.google.android.youtube
 adb shell pm disable-user --user 0 com.google.android.gm
+adb shell pm disable-user --user 0 com.spotify.music
 adb shell pm disable-user --user 0 com.google.android.googlequicksearchbox
 adb shell pm disable-user --user 0 com.google.android.apps.maps
+adb shell pm uninstall -k --user 0 com.google.android.apps.messaging
 timeout /t 2 /nobreak > nul
+echo (--------------------------------------)
+echo                 MISC
+echo (--------------------------------------)
+adb shell pm uninstall -k --user 0 com.netflix.mediaclient
 echo (--------------------------------------)
 echo                Microsoft apps
 echo (--------------------------------------)
@@ -64,6 +70,8 @@ adb shell pm uninstall -k --user 0 com.microsoft.office.powerpoint
 adb shell pm uninstall -k --user 0 com.microsoft.office.excel
 adb shell pm uninstall -k --user 0 com.microsoft.office.word
 adb shell pm uninstall -k --user 0 com.microsoft.skydrive
+adb shell pm uninstall -k --user 0 com.microsoft.office.officehubrow
+adb shell pm uninstall -k --user 0 com.microsoft.office.outlook
 timeout /t 2 /nobreak > nul
 echo (--------------------------------------)
 echo                Linkedin Apps
@@ -73,6 +81,9 @@ timeout /t 2 /nobreak > nul
 echo (--------------------------------------)
 echo                Samsung Apps
 echo (--------------------------------------)
+adb shell pm uninstall -k --user 0 com.opera.max.oem
+adb shell pm uninstall -k --user 0 com.samsung.android.app.spage
+adb shell pm uninstall -k --user 0 com.samsung.ecomm.global.in
 adb shell pm uninstall -k --user 0 com.sec.android.app.sbrowser
 adb shell pm uninstall -k --user 0 com.sec.android.email.provider
 adb shell pm uninstall -k --user 0 com.sec.android.app.voicenote
@@ -99,6 +110,9 @@ adb shell pm uninstall -k --user 0 com.opera.max.preinstall
 adb shell pm uninstall -k --user 0 com.samsung.android.aoo.spage
 adb shell pm uninstall -k --user 0 com.samsung.android.spaymini
 adb shell pm uninstall -k --user 0 com.samsung.android.app.tips
+adb shell pm uninstall -k --user 0 com.samsung.sree
+adb shell pm uninstall -k --user 0 com.samsung.android.voc
+adb shell pm uninstall -k --user 0 com.sec.android.easyMover
 timeout /t 2 /nobreak > nul
 echo (--------------------------------------)
 echo                 Bixby apps
